@@ -454,7 +454,7 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	#ingotDarkSteel
 	<ore:ingotDarkSteel> : [
 		<gregtech:meta_item_1:10704>
-	],	
+	],
 
 	#ingotElectricalSteel
 	<ore:ingotElectricalSteel> : [
@@ -2132,6 +2132,8 @@ recipes.addShapeless(<ore:dustEndstone>.firstItem, [<contenttweaker:endstonedust
 recipes.addShapeless(<ore:wireGtSinglePulsatingIron>.firstItem, [<contenttweaker:pulsatingwire>]);
 <contenttweaker:pulsatingwire>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
 <contenttweaker:pulsatingwire>.addTooltip(format.red("Please use the GregTech variant of Pulsating Iron Wire."));
+
+<extendedcrafting:interface>.addTooltip(format.red("Due to game-breaking bugs, this is a crafting component only."));
 
 //neutronium plate exchange
 recipes.addShapeless("of_exchange_neutronium_plate",
