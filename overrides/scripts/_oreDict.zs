@@ -140,7 +140,7 @@ var blocksDisabled as IItemStack[][IOreDictEntry] = {
 	#blockFuelCoke
 	<ore:blockFuelCoke> : [
 		<thermalfoundation:storage_resource:1>
-	]		
+	]
 };
 
 for oreDictEntry, items in blocksDisabled {
@@ -454,7 +454,7 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 	#ingotDarkSteel
 	<ore:ingotDarkSteel> : [
 		<gregtech:meta_item_1:10704>
-	],	
+	],
 
 	#ingotElectricalSteel
 	<ore:ingotElectricalSteel> : [
@@ -2112,13 +2112,20 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_2:32496>);		//circuit2
 //sulfur from thermal to gt sulfur
 recipes.addShapeless(<gregtech:meta_item_1:2065>, [<thermalfoundation:material:771>]);
 
-//Thermal Coal Coke Decomposition 
+//Thermal Coal Coke Decomposition
 recipes.addShapeless(<gregtech:meta_item_1:8357> * 9, [<thermalfoundation:storage_resource:1>]);
 
 // Temporary recipe to convert endstone dusts
 recipes.addShapeless(<ore:dustEndstone>.firstItem, [<contenttweaker:endstonedust>]);
 <contenttweaker:endstonedust>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
 <contenttweaker:endstonedust>.addTooltip(format.red("Please use the GregTech variant of Endstone Dust."));
+
+// Temporary recipe to convert pulsating iron wire that is probably unnecessary anyway.
+recipes.addShapeless(<ore:wireGtSinglePulsatingIron>.firstItem, [<contenttweaker:pulsatingwire>]);
+<contenttweaker:pulsatingwire>.addTooltip(format.red("This item is obsolete and will be removed in the next update."));
+<contenttweaker:pulsatingwire>.addTooltip(format.red("Please use the GregTech variant of Pulsating Iron Wire."));
+
+<extendedcrafting:interface>.addTooltip(format.red("Due to game-breaking bugs, this is a crafting component only."));
 
 //neutronium plate exchange
 recipes.addShapeless("of_exchange_neutronium_plate",
