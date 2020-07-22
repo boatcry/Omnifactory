@@ -146,7 +146,7 @@ makeShaped("of_ender_tank", <enderstorage:ender_storage:1>,
 	{ B : <minecraft:blaze_rod>, //Blaze Rod
 	  W : <minecraft:wool>, //Wool
 	  O : <ore:obsidian>, //Obsidian
-	  C : basictank, //Basic Tank
+	  C : basictankIng, //Basic Tank
 	  E : <gregtech:compressed_9:14> //Ender Pearl Block
 	  });
 
